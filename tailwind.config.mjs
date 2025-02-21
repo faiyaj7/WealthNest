@@ -7,9 +7,10 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      fontFamily: {
+        sans: ["PT Sans", "serif"],
+        oswald: ["Oswald", "serif"],
+        besley: ["Besley", "serif"],
       },
     },
   },
