@@ -1,6 +1,7 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import "./globals.css";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+
+import "../globals.css";
 
 export const metadata = {
   title: "WealthNest",
@@ -13,7 +14,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
-        {children} ,<Footer />
+        {children}
+        <Footer />
       </body>
     </html>
   );

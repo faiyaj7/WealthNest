@@ -38,7 +38,10 @@ const Footer = () => {
 
       <div className="flex flex-wrap gap-4 items-start justify-start">
         {footerMenu.map((item) => (
-          <div className="flex flex-col basis-1/12 grow min-w-[150px]">
+          <div
+            className="flex flex-col basis-1/12 grow min-w-[150px]"
+            key={item.id}
+          >
             <h1 className="font-oswald pb-4">{item.name}</h1>
             <div className="flex gap-3 flex-col mb-8">
               {item.offSpring.map((child) => (
@@ -49,14 +52,14 @@ const Footer = () => {
         ))}
       </div>
 
-      <hr className="py-4 text-slate-200"/>
+      <hr className="py-4 text-slate-200" />
 
-      <p className="font-besley text-xs">
+      <p className="font-besley text-xs ">
         &copy; 2016–2025, WealthNest Technologies Inc. All Rights Reserved. For
         further details see our Legal Disclosures. By using this website, you
         accept our Terms of Use and Privacy Policy.
       </p>
-      <p className="font-besley text-xs">
+      <p className="font-besley text-xs pb-4">
         For information about filing a complaint please visit How to File a
         Complaint.
       </p>
